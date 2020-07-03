@@ -1,9 +1,18 @@
 /* About Info */
 
 #about-info {
+  .image-wrapper {
+    overflow: hidden;
     .info-right {
-        background: url("/assets/img/photo-2.jpg") no-repeat center/cover;
-        min-height: 350px;
-        border-radius: 3%;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/img/photo-2.jpg") no-repeat center/cover;
+      min-height: 350px;
+      border-radius: 3%;
+      transform: scale(1.025);
+      &:hover {
+        transform: scale(1);
+      }
     }
+  }
 }

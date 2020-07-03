@@ -1,17 +1,21 @@
 #showcase {
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url("/assets/img/showcase.jpg") no-repeat center center/cover;
-    min-height: 600px;
-    .showcase-content {
-        color: #fff;
-        text-align: center;
-        h1 {
-            font-size: 60px;
-            line-height: 1.2em;
-        }
-        p {
-            padding-bottom: 20px;
-            line-height: 1.7em;
-        }
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("/assets/img/showcase.jpg") no-repeat center center/cover fixed;
+  min-height: 600px;
+  .showcase-content {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    h1 {
+      font-size: 60px;
+      line-height: 1.2em;
+      &:hover {
+        transform: scale(1.025);
+      }
     }
+    p {
+      padding-bottom: 20px;
+      line-height: 1.7em;
+    }
+  }
 }

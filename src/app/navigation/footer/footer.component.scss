@@ -1,8 +1,30 @@
-/* Main-Footer */
+@import "src/variables.scss";
 
+/* Main-Footer */
 #main-footer {
-    text-align: center;
-    background: #444;
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+.credits {
+  background-color: #111;
+  p {
     color: #fff;
-    padding: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    .angular-icon {
+      height: 14px;
+    }
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      cursor: pointer;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+  }
 }

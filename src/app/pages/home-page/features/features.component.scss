@@ -1,14 +1,18 @@
 /* Features */
-
-.box {
-    i {
-        margin-bottom: 10px;
+.container {
+  overflow: hidden;
+  .box {
+    &:hover {
+      transform: scale(1.025);
     }
+    i {
+      margin-bottom: 10px;
+    }
+  }
 }
 
-
 @media (max-width: 959px) {
-    .container {
-        padding: 0;
-    }
+  .container {
+    padding: 0;
+  }
 }
