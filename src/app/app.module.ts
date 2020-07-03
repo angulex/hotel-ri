@@ -18,7 +18,6 @@ import { FeaturesComponent } from './pages/home-page/features/features.component
 import { AboutComponent } from './pages/about-page/about/about.component';
 import { TestimonialsComponent } from './pages/about-page/testimonials/testimonials.component';
 import { ContactComponent } from './pages/contact-page/contact/contact.component';
-import { ContactInfoComponent } from './pages/contact-page/contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import { ContactInfoComponent } from './pages/contact-page/contact-info/contact-
     AboutComponent,
     TestimonialsComponent,
     ContactComponent,
-    ContactInfoComponent
   ],
   imports: [
     BrowserModule,

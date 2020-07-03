@@ -3,28 +3,38 @@
 /* Main-Footer */
 #main-footer {
   text-align: center;
-  background: #444;
-  color: #fff;
+  background: $dark;
+  color: $white;
   padding: 20px;
+  .box {
+    i {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .credits {
-  background-color: #111;
+  background-color: $black;
   p {
-    color: #fff;
+    color: $white;
     font-size: 16px;
     vertical-align: middle;
     .angular-icon {
       height: 14px;
     }
     a {
-      color: #fff;
-      border-bottom: 1px solid #fff;
+      color: $white;
+      border-bottom: 1px solid $white;
       cursor: pointer;
       &:hover {
         color: $primary;
       }
     }
+  }
+}
 
+@media (max-width: 959px) {
+  .copywrite {
+    margin-top: 80px;
   }
 }

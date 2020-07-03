@@ -59,7 +59,7 @@ p {
 }
 
 .text-shadowed {
-    text-shadow: 2px 2px 3px #222;
+    text-shadow: 2px 2px 3px $dark;
 }
 
 .bg-dark {
@@ -87,6 +87,10 @@ p {
     padding: 13px 20px;
     border: none;
     cursor: pointer;
+    &:hover {
+        border-radius: 8%;
+        transform: scale(1.025);
+    }
 }
 
 .btn:hover {
@@ -120,7 +124,10 @@ p {
 }
 
 @media (max-width: 959px) {
+    section {
+        padding: 24px 0;
+    }
     .box {
-        border-bottom: #444 solid;
+        border-bottom: $grey solid;
     }
 }

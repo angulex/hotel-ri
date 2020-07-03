@@ -12,7 +12,10 @@
 }
 
 @media (max-width: 959px) {
-  .container {
+  section {
     padding: 0;
+    .container {
+      padding: 0;
+    }
   }
 }

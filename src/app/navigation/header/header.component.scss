@@ -1,4 +1,4 @@
-@import 'src/variables.scss';
+@import "src/variables.scss";
 
 /* Navbar */
 #navbar {
@@ -23,7 +23,7 @@
                     padding: 20px;
                     &:hover,
                     &.active-link {
-                        background: #444;
+                        background: $grey;
                         color: $primary;
                     }
                 }
