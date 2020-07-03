@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { ContactInfoComponent } from './pages/contact-page/contact-info/contact-
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

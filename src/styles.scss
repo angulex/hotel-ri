@@ -1,19 +1,29 @@
+@import 'src/variables.scss';
+
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    transition: 0.3s;
 }
 
 html,
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body::before {
+    display: block;
+    content: "";
+    height: 64px;
 }
 
 section {
-    overflow: hidden;
+    padding: 64px 0;
 }
 
 ul {
@@ -21,7 +31,7 @@ ul {
 }
 
 a {
-    color: #333;
+    color: $dark;
     text-decoration: none;
 }
 
@@ -29,6 +39,7 @@ h1,
 h2,
 h3 {
     padding-bottom: 20px;
+    line-height: 1.2;
 }
 
 p {
@@ -44,20 +55,24 @@ p {
 }
 
 .text-primary {
-    color: #f7c08a;
+    color: $primary;
+}
+
+.text-shadowed {
+    text-shadow: 2px 2px 3px #222;
 }
 
 .bg-dark {
-    background: #333;
-    color: #fff;
+    background: $dark;
+    color: $white;
 }
 .bg-light {
-    background: #f4f4f4;
-    color: #333;
+    background: $light;
+    color: $dark;
 }
 .bg-primary {
-    background: #f7c08a;
-    color: #333;
+    background: $primary;
+    color: $dark;
 }
 
 .lead {
@@ -67,21 +82,21 @@ p {
 .btn {
     display: inline-block;
     font-size: 18px;
-    color: #fff;
-    background: #333;
+    color: $white;
+    background: $dark;
     padding: 13px 20px;
     border: none;
     cursor: pointer;
 }
 
 .btn:hover {
-    background: #f7c08a;
-    color: #333;
+    background: $primary;
+    color: $dark;
 }
 
 .btn-light {
-    color: #333;
-    background: #f4f4f4;
+    color: $dark;
+    background: $light;
 }
 
 .l-heading {
@@ -89,12 +104,23 @@ p {
 }
 
 .box {
-    width: calc(100% / 3);
     padding: 50px;
     text-align: center;
 }
 
 /* Padding */
-.py-1 { padding: 10px 0; }
-.py-2 { padding: 20px 0; }
-.py-3 { padding: 30px 0; }
+.py-1 {
+    padding: 10px 0;
+}
+.py-2 {
+    padding: 20px 0;
+}
+.py-3 {
+    padding: 30px 0;
+}
+
+@media (max-width: 959px) {
+    .box {
+        border-bottom: #444 solid;
+    }
+}

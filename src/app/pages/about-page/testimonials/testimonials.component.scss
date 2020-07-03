@@ -1,19 +1,18 @@
+@import "src/variables.scss";
+
 /* Testimonials */
 #testimonials {
-    height: 600px;
-    background: url('src/assets/img/test-bg.jpg') no-repeat center center/cover;
+    background: url('/assets/img/test-bg.jpg') no-repeat center center/cover;
     padding-top: 100px;
 }
 
 #testimonials h2 {
-    color: #fff;
+    color: $dark;
     text-align: center;
     padding-bottom: 40px;
 }
 
 #testimonials .testimonial {
-    display: flex;
-    flex-direction: row;
     padding: 20px;
     margin-bottom: 40px;
     border-radius: 5px;
