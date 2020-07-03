@@ -1,0 +1,28 @@
+/* Home Info */
+#home-info {
+    height: 400px;
+}
+
+#home-info .container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#home-info .info-img {
+    width: 50%;
+    background: url('src/assets/img/photo-1.jpg') no-repeat;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    width: 50%;
+    min-height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}

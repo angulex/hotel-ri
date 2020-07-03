@@ -1,0 +1,35 @@
+/* Navbar */
+#navbar {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        overflow: auto;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                a {
+                    display: block;
+                    padding: 20px;
+                    text-align: center;
+                    &:hover,
+                    .active-link {
+                        background: #444;
+                        color: #f7c08a;
+                    }
+                }
+            }
+        }
+        a {
+            color: #fff;
+        }
+        .logo {
+            padding-top: 20px;
+        }
+    }
+}

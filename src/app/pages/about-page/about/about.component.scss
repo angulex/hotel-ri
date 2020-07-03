@@ -1,0 +1,25 @@
+/* About Info */
+#about-info .container {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-info .info-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right {
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
