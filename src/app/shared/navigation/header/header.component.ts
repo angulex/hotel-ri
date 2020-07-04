@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../../shared.service';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   open = false;
 
-  constructor() { }
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void {
   }
 
   toggle() {
     this.open = !this.open;
+  }
+
+  scrollToAnchor(anchor: string) {
+    this.sharedService.scrollToAnchor(anchor);
   }
 }
