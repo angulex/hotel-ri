@@ -1,29 +1,85 @@
 <header class="bg-dark">
-    <nav id="navbar">
-        <div class="container" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center ">
-            <div class="mobile-nav" fxLayout="row" fxLayoutAlign="space-between center">
-                <h1 class="logo"><a [routerLink]="" (click)="scrollToAnchor('hero')">HRI</a></h1>
-                <div fxLayout="column" fxLayoutAlign="center start" fxHide.gt-sm class="burger" (click)="toggle()">
-                    <div class="bar1 {{open ? 'change' : null}}"></div>
-                    <div class="bar2 {{open ? 'change' : null}}"></div>
-                    <div class="bar3 {{open ? 'change' : null}}"></div>
-                </div>
-            </div>
-
-            <ul fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center" [fxHide.lt-md]="!open">
-                <li>
-                    <a fxLayoutAlign="center center" [routerLink]="" (click)="toggle()"
-                        (click)="scrollToAnchor('hero')">Welcome</a>
-                </li>
-                <li>
-                    <a fxLayoutAlign="center center" [routerLink]="" (click)="toggle()"
-                        (click)="scrollToAnchor('about')">About</a>
-                </li>
-                <li>
-                    <a fxLayoutAlign="center center" [routerLink]="" (click)="toggle()"
-                        (click)="scrollToAnchor('contact')">Contact</a>
-                </li>
-            </ul>
+  <nav id="navbar">
+    <div
+      class="container"
+      fxLayout.gt-sm="row"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="space-between center "
+    >
+      <div
+        class="mobile-nav"
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+      >
+        <h1 class="logo">
+          <a [routerLink]="" (click)="scrollToAnchor('hero')">HRI</a>
+        </h1>
+        <div
+          fxLayout="column"
+          fxLayoutAlign="center start"
+          fxHide.gt-sm
+          class="burger"
+          (click)="toggle()"
+        >
+          <div class="bar1 {{ open ? 'change' : null }}"></div>
+          <div class="bar2 {{ open ? 'change' : null }}"></div>
+          <div class="bar3 {{ open ? 'change' : null }}"></div>
         </div>
-    </nav>
+      </div>
+
+      <ul
+        fxLayout.gt-sm="row"
+        fxLayout.lt-md="column"
+        fxLayoutAlign="center center"
+        [fxHide.lt-md]="!open"
+      >
+        <li>
+          <a
+            fxLayoutAlign="center center"
+            [routerLink]=""
+            (click)="toggle()"
+            (click)="scrollToAnchor('info')"
+            >History</a
+          >
+        </li>
+        <li>
+          <a
+            fxLayoutAlign="center center"
+            [routerLink]=""
+            (click)="toggle()"
+            (click)="scrollToAnchor('features')"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            fxLayoutAlign="center center"
+            [routerLink]=""
+            (click)="toggle()"
+            (click)="scrollToAnchor('about')"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            fxLayoutAlign="center center"
+            [routerLink]=""
+            (click)="toggle()"
+            (click)="scrollToAnchor('testimonials')"
+            >Testimonials</a
+          >
+        </li>
+
+        <li>
+          <a
+            fxLayoutAlign="center center"
+            [routerLink]=""
+            (click)="toggle()"
+            (click)="scrollToAnchor('contact')"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

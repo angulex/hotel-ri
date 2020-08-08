@@ -1,4 +1,4 @@
-@import 'src/variables.scss';
+@import "src/variables.scss";
 
 /* Reset */
 * {
@@ -10,7 +10,7 @@
 
 html,
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.7em;
     height: 100%;
     scroll-behavior: smooth;
@@ -88,10 +88,6 @@ p {
     padding: 13px 20px;
     border: none;
     cursor: pointer;
-    &:hover {
-        border-radius: 8%;
-        transform: scale(1.025);
-    }
 }
 
 .btn:hover {

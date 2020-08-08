@@ -1,0 +1,14 @@
+@import "src/variables";
+
+.credits {
+    background-color: #111111;
+    .container {
+        padding: 16px;
+        .created-by {
+            color: #fff;
+            a {
+                color: $primary;
+            }
+        }
+    }
+}

@@ -6,27 +6,21 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedService } from 'src/app/shared/shared.service';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { CreditsComponent } from './navigation/credits/credits.component';
 import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent],
-  imports: [
-    CommonModule,
-    FlexLayoutModule,
-    RouterModule,
-    AppRoutingModule,
-
-  ],
+  declarations: [HeaderComponent, FooterComponent, CreditsComponent],
+  imports: [CommonModule, FlexLayoutModule, RouterModule, AppRoutingModule],
   exports: [
     CommonModule,
     FlexLayoutModule,
     RouterModule,
     AppRoutingModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CreditsComponent,
   ],
-  providers: [
-    SharedService
-  ]
+  providers: [SharedService],
 })
-export class SharedModule { }
+export class SharedModule {}

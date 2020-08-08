@@ -2,9 +2,6 @@
 .container {
   overflow: hidden;
   .box {
-    &:hover {
-      transform: scale(1.025);
-    }
     i {
       margin-bottom: 10px;
     }

@@ -37,7 +37,7 @@ header {
                         &:hover,
                         &.active-link {
                             color: $primary;
-                            border: 1px solid $primary;
+                            border-bottom: 1px solid $primary;
                         }
                     }
                 }
