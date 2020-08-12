@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/shared/shared.service';
 
 @Component({
   selector: 'app-home-info',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-info.component.scss']
 })
 export class HomeInfoComponent implements OnInit {
+  constructor(private sharedService: SharedService) { }
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  scrollToAnchor(anchor: string) {
+    this.sharedService.scrollToAnchor(anchor);
   }
-
 }
